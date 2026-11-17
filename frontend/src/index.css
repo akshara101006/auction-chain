@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Midnight Charcoal, Graphite, Platinum White, Steel Grey, Champagne Gold */
+    --bg-primary: #0B0C10;
+    --bg-secondary: #12141A;
+    --bg-elevated: #171A22;
+    --border-subtle: #232730;
+    --border-active: #C5A46D;
+    --text-primary: #F4F5F7;
+    --text-secondary: #8E95A5;
+    --text-muted: #646C7E;
+    --accent-primary: #C5A46D;
+    --accent-hover: #D4B57E;
+    --accent-cyan: #94A3B8;
+    --status-success: #2E9B68;
+    --status-warning: #D49B38;
+    --status-danger: #C94A4A;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    letter-spacing: -0.005em;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.025em;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'IBM Plex Mono', 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Refined minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0C10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232730;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #363C4A;
+}

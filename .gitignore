@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+blockchain/node_modules/
+
+# Build & compilation artifacts
+dist/
+frontend/dist/
+blockchain/artifacts/
+blockchain/cache/
+server.js
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# Local environment & workspace metadata
+.env
+.env.*
+!.env.example
+metadata.json
+bun.lock
+.aistudio/
+public/assets/aistudio/
+frontend/public/assets/aistudio/
+
+# Unnecessary files
+PROJECT_TRACKER.md
